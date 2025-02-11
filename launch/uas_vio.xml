@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="uas_vio" exec="vio_node" name="vio_node">
+        <remap from="imu" to="/mavros/imu/data" />
+        <remap from="image" to="/camera/infra1/image_rect_raw" />
+    </node>
+</launch>
